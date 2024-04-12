@@ -1,6 +1,89 @@
+:root {
+  --background-color: #0891b2;
+}
+
+@font-face {
+  font-family: playfair_display;
+  src: url(./fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(./fonts/Roboto/Roboto-Regular.ttf);
+}
+
 body {
   padding: 0;
   margin: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+@media (max-width: 600px) {
+  main,
+  footer > div {
+    margin: 10px;
+  }
+
+  .headerContent {
+    margin: 0 20px 20px 20px;
+  }
+
+  .headerContent,
+  .headerAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .angledBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 235vw;
+    height: 60vh;
+    background-color: var(--background-color);
+    transform: translateX(-33%) translateY(-50%) rotate(-45deg);
+  }
+
+  .profilePicture {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  .profilePicture img {
+    object-fit: contain;
+    width: 90vw;
+    margin-top: 20px;
+  }
+
+  .profilePicture h1 {
+    z-index: 2;
+    font-size: 3em;
+    color: aliceblue;
+    width: 50px;
+    font-family: playfair_display;
+    margin-top: -159px;
+    margin-left: 20px;
+  }
+
+  .myWork,
+  .contact h2,
+  .contactIcons {
+    text-align: center;
+  }
+
+  footer {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .emailContact img,
+  .contactPhone img {
+    display: none;
+  }
 }
 
 .socialIcon {
@@ -9,4 +92,47 @@ body {
 
 .iconsProject {
   width: 10px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+footer {
+  color: aliceblue;
+  font-family: roboto;
+  font-size: 1em;
+}
+
+footer h2 {
+  font-family: playfair_display;
+  font-size: 2em;
+}
+
+.contact p:nth-child(3),
+.contactPhone p {
+  margin-bottom: -18px;
+}
+
+footer > img {
+  object-fit: cover;
+  width: 100vw;
+}
+
+.contactPhone,
+.emailContact {
+  display: flex;
+}
+
+.contactIcons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.contactIcons img {
+  width: 10vw;
+  height: auto;
+  margin-bottom: 50px;
 }
