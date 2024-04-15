@@ -18,6 +18,16 @@ body {
   font-family: "Courier New", Courier, monospace;
 }
 
+h2,
+h3,
+.projects div {
+  font-family: playfair_display;
+}
+
+p {
+  font-family: roboto;
+}
+
 @media (max-width: 600px) {
   main,
   footer > div {
@@ -101,12 +111,10 @@ body {
 
 footer {
   color: aliceblue;
-  font-family: roboto;
   font-size: 1em;
 }
 
 footer h2 {
-  font-family: playfair_display;
   font-size: 2em;
 }
 
