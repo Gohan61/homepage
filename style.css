@@ -54,6 +54,8 @@ p {
   width: 9vw;
 }
 
+/* Phone sized styling */
+
 @media (max-width: 600px) {
   main,
   footer > div {
@@ -87,24 +89,29 @@ p {
 
   .profilePicture {
     width: 100%;
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     z-index: 1;
+    margin-bottom: 50px;
   }
 
   .profilePicture img {
     object-fit: contain;
     width: 90vw;
     margin-top: 20px;
+    grid-area: 1 / 1;
   }
 
   .profilePicture h1 {
     z-index: 2;
     font-size: 3em;
     color: aliceblue;
-    width: 50px;
     font-family: playfair_display;
-    margin-top: -159px;
-    margin-left: 20px;
+    align-self: flex-end;
+    text-align: center;
+    grid-area: 1 / 1;
+    margin: 0;
   }
 
   .myWork,
@@ -140,6 +147,8 @@ p {
   }
 }
 
+/* Tablet sized styling */
+
 @media (min-width: 600px) {
   main,
   .headerContent,
@@ -161,8 +170,10 @@ p {
 
   .profilePicture h1 {
     color: aliceblue;
-    margin-left: -40px;
-    font-size: 3.5em;
+    font-size: 4em;
+    position: absolute;
+    width: 100%;
+    text-align: end;
   }
 
   .angledBackground {
@@ -219,6 +230,42 @@ p {
   footer > img {
     object-fit: contain;
     width: 35vw;
+  }
+}
+
+/* Desktop sized styling */
+
+@media (min-width: 1080px) {
+  main,
+  .headerContent,
+  footer > div {
+    margin: 60px;
+  }
+
+  .profilePicture {
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: -262px;
+    width: 36vw;
+  }
+
+  .profilePicture img {
+    object-fit: contain;
+    width: 36vw;
+    position: relative;
+    grid-area: 1 / 1;
+  }
+
+  .profilePicture h1 {
+    color: aliceblue;
+    font-size: 3.5em;
+    align-self: flex-end;
+    text-align: center;
+    z-index: 2;
+    margin-bottom: 0;
+    grid-area: 1 / 1;
   }
 }
 
