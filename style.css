@@ -132,6 +132,9 @@ p {
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 5px;
+  margin-bottom: 100px;
+  gap: 50px;
 }
 
 .projects > div div:nth-child(1) {
@@ -166,6 +169,29 @@ p {
 
 .project6 div:nth-child(1) {
   background-color: #5e8f4d;
+}
+
+.projectDescription {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 2px 2px rgb(128, 128, 128, 0.2);
+}
+
+.projectDescription h3 {
+  margin: 0;
+}
+
+.iconsProject {
+  width: 100px;
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+}
+
+.iconsProject img {
+  width: 20px;
 }
 
 /* Footer styles */
