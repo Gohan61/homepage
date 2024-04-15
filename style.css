@@ -28,6 +28,21 @@ p {
   font-family: roboto;
 }
 
+.headerAbout h2 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.headerAbout p {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+.headerAbout p,
+.projects p {
+  color: rgb(104, 101, 101);
+}
+
 @media (max-width: 600px) {
   main,
   footer > div {
