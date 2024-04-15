@@ -165,33 +165,30 @@ p {
     z-index: 0;
     background-color: white;
     box-shadow: 0 2px 2px 2px rgb(128, 128, 128, 0.2);
-    text-align: end;
-    width: 90vw;
+    width: 80vw;
     margin-left: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 1fr;
     padding: 20px;
   }
 
   .headerAbout h2 {
-    grid-area: 1 / 2;
+    width: 100%;
+    margin-left: calc(100% / 2 + 20px);
   }
 
   .aboutMe {
-    width: 366px;
-    grid-area: 2 / 2;
-    justify-self: end;
+    display: block;
+    text-align: start;
   }
 
-  .headerIcons {
-    grid-area: 2 / 1;
-    justify-self: start;
-    align-self: flex-end;
+  .empty {
+    width: 41vw;
+    height: 16vh;
+    float: left;
+    display: block;
   }
 
-  .headerIcons img {
-    width: 7vw;
+  .headerIcons * {
+    display: none;
   }
 }
 
