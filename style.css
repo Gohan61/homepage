@@ -125,6 +125,76 @@ p {
   }
 }
 
+@media (min-width: 600px) {
+  main,
+  .headerContent,
+  footer > div {
+    margin: 30px;
+  }
+
+  .profilePicture {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    margin-bottom: -262px;
+  }
+
+  .profilePicture img {
+    object-fit: contain;
+    width: 46vw;
+  }
+
+  .profilePicture h1 {
+    color: aliceblue;
+    margin-left: -40px;
+    font-size: 3.5em;
+  }
+
+  .angledBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 360vw;
+    height: 78vh;
+    background-color: var(--background-color);
+    transform: translateX(-34%) translateY(-56%) rotate(-23deg);
+    z-index: -1;
+  }
+
+  .headerAbout {
+    z-index: 0;
+    background-color: white;
+    box-shadow: 0 2px 2px 2px rgb(128, 128, 128, 0.2);
+    text-align: end;
+    width: 90vw;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr;
+    padding: 20px;
+  }
+
+  .headerAbout h2 {
+    grid-area: 1 / 2;
+  }
+
+  .aboutMe {
+    width: 366px;
+    grid-area: 2 / 2;
+    justify-self: end;
+  }
+
+  .headerIcons {
+    grid-area: 2 / 1;
+    justify-self: start;
+    align-self: flex-end;
+  }
+
+  .headerIcons img {
+    width: 7vw;
+  }
+}
+
 .iconsProject {
   width: 10px;
 }
