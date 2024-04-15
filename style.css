@@ -123,6 +123,20 @@ p {
   .contactPhone img {
     display: none;
   }
+
+  .contact p:nth-child(3),
+  .contactPhone p {
+    margin-bottom: -18px;
+  }
+
+  .emailContact p {
+    margin-top: 0;
+  }
+
+  footer > img {
+    object-fit: cover;
+    width: 100vw;
+  }
 }
 
 @media (min-width: 600px) {
@@ -189,6 +203,21 @@ p {
 
   .headerIcons * {
     display: none;
+  }
+
+  .contact {
+    margin-right: 0;
+    width: 40vw;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  footer > img {
+    object-fit: contain;
+    width: 35vw;
   }
 }
 
@@ -266,35 +295,46 @@ p {
 footer {
   color: aliceblue;
   font-size: 1em;
+  background-color: var(--background-color);
 }
 
 footer h2 {
   font-size: 2em;
 }
 
-.contact p:nth-child(3),
 .contactPhone p {
-  margin-bottom: -18px;
+  margin: 0;
 }
 
-footer > img {
-  object-fit: cover;
-  width: 100vw;
+.contact p:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.contact p:nth-child(4) {
+  margin-top: 0;
 }
 
 .contactPhone,
 .emailContact {
   display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .contactIcons {
   display: flex;
   gap: 10px;
-  justify-content: center;
+  justify-content: start;
 }
 
 .contactIcons img {
-  width: 10vw;
+  width: 6vw;
   height: auto;
   margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.emailContact img,
+.contactPhone img {
+  width: 4vw;
 }
