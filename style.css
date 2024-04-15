@@ -78,7 +78,7 @@ p {
     position: absolute;
     top: 0;
     left: 0;
-    width: 235vw;
+    width: 257vw;
     height: 60vh;
     background-color: var(--background-color);
     transform: translateX(-33%) translateY(-50%) rotate(-45deg);
