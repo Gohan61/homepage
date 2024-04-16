@@ -1,5 +1,5 @@
 :root {
-  --background-color: #0891b2;
+  --background-color: #09758f;
 }
 
 @font-face {
@@ -450,7 +450,6 @@ footer h2 {
 .contactIcons {
   display: flex;
   gap: 10px;
-  /* justify-content: start; */
 }
 
 .contactIcons img {
